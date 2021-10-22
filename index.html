@@ -1,45 +1,94 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html lang="fr">
+
     <head>
+	
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
+		
+<!--page adaptative a la taille de fenetre et a l'ecran-->
+
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        
-        <meta http-equiv="refresh" content="10; url=#">
+		
+<!--infos search engine-->
+
+		<meta name="keywords" content="HTML,CSS,Text,Editor,Live Coding" />
+		<meta name="description" content="a Simple HTML & CSS Text Editor with Live Coding made while in training" />
+		<meta name="revised" content="11/10/2021" />
+		
+<!--author log-->		
+
+		<meta name="author" content="JJR">	
+		
+<!--favicon-->	
+	
+		<link rel="icon" type="image/png" sizes="20x20" href="code.png">
+		
+<!--rafraichissement automatique (pratique pour la conception)
+
+        <meta http-equiv="refresh" content="10; url=#">-->
+		
+<!--custom style & JS-->
 
         <link rel="stylesheet" href="style.css">
-        <script type="text/javascript" src="app.js"></script>
-
-        <title>Live Code</title>
-    </head>
-    <body>
+		
+<!--Tab Title--> 
        
-        <section>
-            <br>
-            <h1>Editeur HTML et CSS</h1>
-            <br>
-            <br>
-                <article class="coding">
-                    <textarea class="input" id="entree" rows="" cols="" >
+        <title>Live Code</title>
 
-                    </textarea>   
-                </article>
-        </section>
-            <br>
-            <br>
-            <br>
-            <br>
-        <section>
-                <br>
-            <h2>Live_Coding</h2>
-                <br>
-                <br>
-                <article class="live">
-                    <textarea class="output" id="sortie">
+    </head>
 
-                    </textarea>
-                </article>
-        </section>
+    <body> 
+	
+		<section>
+			
+			<h1>
+				Editor HTML & CSS
+			</h1>
+			
+<!--boutons fonctions-->
 
-    </body>
+			<button id="bold"><b>B</b></button> 
+			<button id="italic"><i>i</i></button> 
+			<button id="underline"><u>S</u></button>
+			
+<!--zone de texte input-->
+
+			<div>
+				<textarea type="text" placeholder="Codez ici!" class="input" id="input" ></textarea>
+			</div>
+			
+<!--barre de progression-->
+
+			<div class="bar" id="bar"></div>
+			
+<!--word counter-->
+
+			<div>
+				<p type="number" class="counter" id="counter" min=0 value=200></p>
+			</div>
+				
+			<div>	
+				<h1>
+					Live Coding
+					<img class="gif" id="gif" align="middle" src="walk.gif" width="50px" height="50px">
+				</h1>
+				
+			</div>	
+				
+<!--zone de texte output-->
+
+				<article>
+					<span type="text" class="output" id="output" maxlength=200></span>
+				</article>
+				
+		</section>
+	
+<!--JS Script-->	
+		
+	<script type="text/javascript" src="app.js"></script>	
+	
+	</body>
+	
 </html>

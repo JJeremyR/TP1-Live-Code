@@ -1,49 +1,64 @@
-
-section
-{
-box-align:center;
-}
-
-.coding
-{
-min-height: 250px;
-border-style: solid;
-border-color: blue;
-}
-
-.live
-{
-min-height: 250px;
-border-style: solid;
-border-color: red;
-}
-
+body 
+	{
+	background-color: lightgrey;
+	}
+	
+button
+	{
+	border-radius: 2px;
+    border: 1px solid grey;
+	margin-bottom: 5px;
+	}
+	
+p	
+	{
+	font-weight:bold;	
+	}
+	
 .input
-{
-padding-top: 0px;
-padding-left:0px;
-padding-right:5px;
-padding-bottom:0px;
-margin-top: 3px;
-margin-left:3px;
-margin-right:3px;
-margin-bottom:0px;
-background-color: grey;
-resize: none;
+	{
+    border-radius: 2px;
+    border: 1px solid grey;
+	resize: none;
+	width: 100%;
+	height: 200px;
+	}
 
-}
+.bar
+	{
+	padding-top: 2px;
+	padding-bottom: 2px;
+	margin-left: 2px;
+	margin-right: -4px;
+    max-width: 100%;
+    border: 1px solid white;
+    background:transparent;
+	}
+
+.counter
+	{
+	float: right;
+	text-align:right;
+	font-style:bolder;
+	color:blue;
+	background-color: transparent;
+	border: hidden;
+/*	visibility: hidden; */	
+	}
+
+.gif
+	{
+	visibility:hidden;
+	}
 
 .output
-{
-    background-color: grey ;
-    resize: none;
-}
-    
-textarea
-{
-width:99%;
-height:250px;
-border:hidden;
-background-color:transparent;
+	{
+/*	visibility: hidden;*/
+	background-color: white;
+	border: white;
+	resize: none;
+	width: 100%;
+	}
+	
 
-}
+
