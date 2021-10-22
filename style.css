@@ -1,64 +1,98 @@
-body 
+body
 	{
-	background-color: lightgrey;
+		background-color: #e6e6e6;	
+		color: #222;
+		border-color: #222;
+		word-wrap: break-word;
 	}
-	
+
+body.dark, .dark *
+	{
+		background-color: #222;
+		color: #e6e6e6;
+		border-color: #e6e6e6;
+	}	
+
 button
 	{
-	border-radius: 2px;
-    border: 1px solid grey;
-	margin-bottom: 5px;
+		width: 30px;
+		height: 30px;	
+		border-radius: 2px;
+    	border: 1px solid #222;
+		margin-top: 30px;
+		margin-bottom: 10px;
 	}
-	
-p	
+
+.switch
 	{
-	font-weight:bold;	
+		float: right;
+		border: 2px solid;
+		border-radius: 20px;
+		width: 180px;
+		padding: 5px;
+		margin: 15px;
 	}
 	
+.inner-switch 
+	{
+		display: inline-block;
+		cursor: pointer;
+		border: 2px solid;
+		border-radius: 20px;
+		width: 50px;
+		text-align: center;
+		font-size: 16px;
+		padding: 5px;
+		margin-left: 5px;
+	}	
+
 .input
 	{
-    border-radius: 2px;
-    border: 1px solid grey;
-	resize: none;
-	width: 100%;
-	height: 200px;
+    	border-radius: 2px;
+    	border: 1px solid;
+		resize: none;
+		width: 100%;
+		height: 200px;
 	}
 
 .bar
 	{
-	padding-top: 2px;
-	padding-bottom: 2px;
-	margin-left: 2px;
-	margin-right: -4px;
-    max-width: 100%;
-    border: 1px solid white;
-    background:transparent;
+		width: 0%;
+		height: 2px;
+		padding-top: 2px;
+		padding-bottom: 2px;
+		margin-left: 2px;
+		margin-right: -4px;
+		max-width: 100%;
+	}
+
+.fond
+	{
+		width:100%;
+		height:10px;
+		background-color: transparent;
+	}
+
+p	
+	{
+		font-weight:bold;	
 	}
 
 .counter
 	{
-	float: right;
-	text-align:right;
-	font-style:bolder;
-	color:blue;
-	background-color: transparent;
-	border: hidden;
-/*	visibility: hidden; */	
+		float: right;
+		text-align:right;
+		background-color: transparent;
+		border: hidden;	
 	}
 
 .gif
 	{
-	visibility:hidden;
+		visibility:hidden;
 	}
 
 .output
 	{
-/*	visibility: hidden;*/
-	background-color: white;
-	border: white;
-	resize: none;
-	width: 100%;
+		resize: none;
+		width: 100%;
 	}
-	
-
-
