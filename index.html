@@ -6,25 +6,25 @@
 	
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-<!--page adaptative a la taille de fenetre et a l'ecran-->
+<!--Page adaptative a la taille de fenetre et a l'ecran-->
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--infos search engine-->
+<!--Infos search engine-->
 		<meta name="keywords" content="HTML,CSS,Text,Editor,Live Coding" />
 		<meta name="description" content="a Simple HTML & CSS Text Editor with Live Coding made while in training" />
-		<meta name="revised" content="13/10/2021" />
-<!--author log-->		
+		<meta name="revised" content="14/10/2021" />
+<!--Author log-->		
 		<meta name="author" content="JJR">	
-<!--favicon-->	
+<!--Favicon-->	
 		<link rel="icon" type="image/png" sizes="20x20" href="code.png">
 					<!--rafraichissement automatique (pratique pour la conception)
         					<meta http-equiv="refresh" content="10; url=#">-->		
-<!--custom style & JS-->
+<!--Custom style-->
         <link rel="stylesheet" href="style.css">
 <!--Tab Title--> 
         <title>Live Code</title>
 
     </head>
-
+<!--Lightmode-->
     <body class="light"> 
 	
 		<section>
@@ -32,29 +32,27 @@
 				Editor HTML & CSS
 			</h1>
 
-<!--mode dark-->
+<!--Darkmode-->
 			<div class="switch"><b> DARK MODE:</b>              
 				<span class="inner-switch"><b>OFF</b></span>
 			</div>
 			
-<!--boutons fonctions-->
+<!--Boutons-->
 			<button id="bold"><b>B</b></button> 
 			<button id="italic"><i>i</i></button> 
 			<button id="underline"><u>S</u></button>
 			
-<!--zone de texte input-->
+<!--Zone de texte input-->
 			<div>
 				<textarea type="text" placeholder="Codez ici!" class="input" id="input" maxlength="200"></textarea>
 			</div>
 			
-<!--barre de progression-->
-			<!--<div class="bar" id="bar"></div>
-			<meter class="bar" id="bar" optimum="0" low="100" high="160" max="200"></meter>-->
+<!--Barre de progression-->
 			<div class="fond">
 			<div class="bar" id="bar"></div>
 			</div>
 			
-<!--word counter-->
+<!--Word counter-->
 			<div>
 				<p type="number" class="counter" id="counter"></p>
 			</div>
@@ -68,7 +66,7 @@
 				
 			</div>	
 				
-<!--zone de texte output-->
+<!--Zone de texte output-->
 				<article>
 					<span type="text" class="output" id="output"></span>
 				</article>
@@ -80,3 +78,4 @@
 	</body>
 	
 </html>
+<!--End-->

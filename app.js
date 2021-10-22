@@ -1,4 +1,4 @@
-//Event Listener
+// Event Listener
 	document.addEventListener("keyup" , stroke);
 	document.addEventListener("keyup" , write);
 	document.addEventListener("keyup" , progression);
@@ -40,13 +40,6 @@
 			{
 				document.getElementById("input").value += "<u></u>"
 			}
-								// Tentative 1 Progress Bar
-								/*	document.addEventListener("keyup",progress);
-
-									function progress()
-									{
-										document.getElementById("bar").value = document.getElementById("output").textContent.length;
-									}*/
 // Progress Bar
 	function progression ()
 	{
@@ -71,16 +64,36 @@
 					}
 					else if(resol == 100)
 						{
-							document.getElementById("bar").style.backgroundColor ="black";
+							document.getElementById("bar").style.backgroundColor ="transparent";
 							alert('Vous avez atteint la limite de caractères!')
+							document.getElementById("counter").innerHTML = 0;
 							document.getElementById("gif").style.visibility = "Hidden";	
 						}	
 	}
 // Dark mode
-
+	const Btn= document.querySelector('.inner-switch');
+		Btn.addEventListener('click',() => 
+			{
+			if(document.body.classList.contains('dark')) 
+				{
+					document.body.classList.add('light')
+					document.body.classList.remove('dark')
+					Btn.innerHTML= "<b>OFF</b>";
+					document.getElementById("gif").src = "walkday.gif";
+				} 
+				else if(document.body.classList.contains('light'))
+					{
+						document.body.classList.add('dark');
+						document.body.classList.remove('light')
+						Btn.innerHTML = "<b>ON</b>";
+						document.getElementById("gif").src = "walknight.gif";
+					}
+			}
+		);
 // Clear everything on refresh	
 	function init()
 		{
 			document.value = "";
 		}
 	window.onload = init;
+// End
