@@ -15,9 +15,7 @@
 <!--Author log-->		
 		<meta name="author" content="JJR">	
 <!--Favicon-->	
-		<link rel="icon" type="image/png" sizes="20x20" href="code.png">
-					<!--rafraichissement automatique (pratique pour la conception)
-        					<meta http-equiv="refresh" content="10; url=#">-->		
+		<link rel="icon" type="image/png" sizes="20x20" href="code.png">	
 <!--Custom style-->
         <link rel="stylesheet" href="style.css">
 <!--Tab Title--> 
@@ -25,7 +23,7 @@
 
     </head>
 <!--Lightmode-->
-    <body class="light"> 
+    <body class="light" id="body"> 
 	
 		<section>
 			<h1>
@@ -38,10 +36,11 @@
 			</div>
 			
 <!--Boutons-->
-			<button id="bold"><b>B</b></button> 
-			<button id="italic"><i>i</i></button> 
-			<button id="underline"><u>S</u></button>
-			
+			<div id="btn">
+				<button id="bold"><b>B</b></button> 
+				<button id="italic"><i>i</i></button> 
+				<button id="underline"><u>S</u></button>
+			</div>
 <!--Zone de texte input-->
 			<div>
 				<textarea type="text" placeholder="Codez ici!" class="input" id="input" maxlength="200"></textarea>
