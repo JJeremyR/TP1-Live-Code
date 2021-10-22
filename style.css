@@ -1,0 +1,49 @@
+
+section
+{
+box-align:center;
+}
+
+.coding
+{
+min-height: 250px;
+border-style: solid;
+border-color: blue;
+}
+
+.live
+{
+min-height: 250px;
+border-style: solid;
+border-color: red;
+}
+
+.input
+{
+padding-top: 0px;
+padding-left:0px;
+padding-right:5px;
+padding-bottom:0px;
+margin-top: 3px;
+margin-left:3px;
+margin-right:3px;
+margin-bottom:0px;
+background-color: grey;
+resize: none;
+
+}
+
+.output
+{
+    background-color: grey ;
+    resize: none;
+}
+    
+textarea
+{
+width:99%;
+height:250px;
+border:hidden;
+background-color:transparent;
+
+}
